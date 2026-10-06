@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="theme-color" content="#08020f">
+  <meta name="description" content="Một trang web tương tác vui bằng HTML, CSS và JavaScript.">
+  <title>Một lời mời đặc biệt 🎃</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="noise"></div>
+  <div class="stars" aria-hidden="true"></div>
+
+  <main class="scene" id="scene">
+    <section class="card" id="card" aria-live="polite">
+      <div class="emoji" id="emoji">🎃</div>
+      <p class="eyebrow">MỘT LỜI MỜI NHỎ</p>
+      <h1 id="title">Bạn có muốn<br><span>tham gia không?</span></h1>
+      <p class="subtitle" id="subtitle">Bấm thử một nút bên dưới nhé 👀</p>
+
+      <div class="buttons" id="buttons">
+        <button class="btn yes" id="yesBtn">✨ Có</button>
+        <button class="btn no" id="noBtn">Không 😶</button>
+      </div>
+
+      <button class="sound" id="soundBtn" type="button" aria-pressed="false">
+        🔇 Bật âm thanh
+      </button>
+    </section>
+  </main>
+
+  <div class="flash" id="flash" aria-hidden="true"></div>
+  <div class="toast" id="toast" role="status"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
